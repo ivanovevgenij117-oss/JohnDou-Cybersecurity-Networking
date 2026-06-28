@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 8e7bce57000a4e30b0e14dd968cf7061fd10ca02 ondrewsa <ondrewsa@21-school.ru> 1769279981 +0300	clone: from ssh://git-ssh.21-school.ru:2222/students_repo/ondrewsa/SQLB12_Warehouse_fundamentals.ID_574112-Team_TL_ondrewsa.13e906df_68a5_448b-1.git
+8e7bce57000a4e30b0e14dd968cf7061fd10ca02 8e7bce57000a4e30b0e14dd968cf7061fd10ca02 ondrewsa <ondrewsa@21-school.ru> 1769280032 +0300	checkout: moving from master to ondrewsa
+8e7bce57000a4e30b0e14dd968cf7061fd10ca02 4156d9eb191ca7f82ab6f9db9073417fcfb95e8a ondrewsa <ondrewsa@21-school.ru> 1769344489 +0300	commit: one
+4156d9eb191ca7f82ab6f9db9073417fcfb95e8a 5ee7db813b66c2450f0bcba25c64d1165c26ae39 ondrewsa <ondrewsa@21-school.ru> 1769351797 +0300	checkout: moving from ondrewsa to riddlera
+5ee7db813b66c2450f0bcba25c64d1165c26ae39 5ee7db813b66c2450f0bcba25c64d1165c26ae39 ondrewsa <ondrewsa@21-school.ru> 1769352022 +0300	checkout: moving from riddlera to develop
+5ee7db813b66c2450f0bcba25c64d1165c26ae39 2ad530e161562df8ed065ea9e398e862d018bbd2 ondrewsa <ondrewsa@21-school.ru> 1769352213 +0300	merge ondrewsa: Merge made by the 'ort' strategy.

@@ -1,0 +1,38 @@
+Jun 16 20:31:46.702 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 16 20:31:46.702 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56799.
+Jun 16 20:31:46.711 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 20:31:46.711 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/GNS3/projects/assignment_ospf/project-files/dynamips 
+Jun 16 20:31:46.711 GENERAL: working_dir=/home/oem/GNS3/projects/assignment_ospf/project-files/dynamips
+Jun 16 20:31:46.711 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/GNS3/projects/assignment_ospf/project-files/dynamips/f3d9421c-49b9-451d-8ec0-6c8a5b9c4388 
+Jun 16 20:31:46.711 GENERAL: working_dir=/home/oem/GNS3/projects/assignment_ospf/project-files/dynamips/f3d9421c-49b9-451d-8ec0-6c8a5b9c4388
+Jun 16 20:31:46.711 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Jun 16 20:31:46.711 VM: VM R2 created.
+Jun 16 20:31:46.711 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Jun 16 20:31:46.711 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Jun 16 20:31:46.712 HYPERVISOR: exec_cmd: vm set_ios R2 /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 16 20:31:46.712 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 16 20:31:46.712 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60b29158 
+Jun 16 20:31:46.712 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Jun 16 20:31:46.712 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jun 16 20:31:46.712 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jun 16 20:31:46.767 HYPERVISOR: exec_cmd: vm set_ios R2 /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 16 20:31:59.767 HYPERVISOR: exec_cmd: nio create_udp udp-51e5c644-928a-4188-b80c-a6acf12bac95 10004 127.0.0.1 10005 
+Jun 16 20:31:59.972 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-51e5c644-928a-4188-b80c-a6acf12bac95 
+Jun 16 20:31:59.972 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 16 20:32:05.036 HYPERVISOR: exec_cmd: nio create_udp udp-cdca6e4c-3eee-49a2-b554-6ff056f9115d 10008 127.0.0.1 10009 
+Jun 16 20:32:05.037 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-cdca6e4c-3eee-49a2-b554-6ff056f9115d 
+Jun 16 20:32:05.037 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 16 20:32:16.547 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 16 20:32:16.549 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/oem/GNS3/projects/assignment_ospf/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 16 20:32:16.551 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 16 20:32:16.553 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Jun 16 20:32:16.555 HYPERVISOR: exec_cmd: vm start R2 
+Jun 16 20:43:46.863 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 16 20:43:46.869 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 16 20:49:46.883 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 16 20:49:46.884 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 16 21:15:01.682 HYPERVISOR: exec_cmd: vm set_ios R2 /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 16 22:02:34.879 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 16 22:02:34.880 HYPERVISOR: exec_cmd: vm stop R2 
+Jun 16 22:02:34.938 VM: VM R2 shutdown.
+Jun 16 22:02:34.939 HYPERVISOR: exec_cmd: vm extract_config R2 

@@ -1,0 +1,3 @@
+﻿0 0 * * * /usr/sbin/logwatch --output mail --mailto mynameisyo@mail.ru --detail High --range Yesterday
+
+

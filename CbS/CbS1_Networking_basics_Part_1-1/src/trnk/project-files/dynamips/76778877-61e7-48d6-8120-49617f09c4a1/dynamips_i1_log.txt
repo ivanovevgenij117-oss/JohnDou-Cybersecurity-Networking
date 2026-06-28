@@ -1,0 +1,58 @@
+Jun 16 15:27:38.156 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 16 15:27:38.156 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57327.
+Jun 16 15:27:38.165 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 15:27:38.166 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/GNS3/projects/trnk/project-files/dynamips 
+Jun 16 15:27:38.166 GENERAL: working_dir=/home/oem/GNS3/projects/trnk/project-files/dynamips
+Jun 16 15:27:38.166 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/GNS3/projects/trnk/project-files/dynamips/77c2b568-0b22-4cf3-955e-8390f8be6415 
+Jun 16 15:27:38.166 GENERAL: working_dir=/home/oem/GNS3/projects/trnk/project-files/dynamips/77c2b568-0b22-4cf3-955e-8390f8be6415
+Jun 16 15:27:38.166 HYPERVISOR: exec_cmd: vm create SW1 1 c3745 
+Jun 16 15:27:38.166 VM: VM SW1 created.
+Jun 16 15:27:38.167 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW1 5000 
+Jun 16 15:27:38.167 HYPERVISOR: exec_cmd: c3745 get_mac_addr SW1 
+Jun 16 15:27:38.167 HYPERVISOR: exec_cmd: vm set_disk0 SW1 1 
+Jun 16 15:27:38.168 HYPERVISOR: exec_cmd: vm get_status SW1 
+Jun 16 15:27:38.168 HYPERVISOR: exec_cmd: vm set_idle_pc SW1 0x60b29158 
+Jun 16 15:27:38.168 HYPERVISOR: exec_cmd: vm set_ios SW1 /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 16 15:27:38.169 HYPERVISOR: exec_cmd: c3745 set_mac_addr SW1 c401.35a2.0000 
+Jun 16 15:27:38.169 HYPERVISOR: exec_cmd: vm set_nvram SW1 256 
+Jun 16 15:27:38.170 HYPERVISOR: exec_cmd: vm set_ram SW1 256 
+Jun 16 15:27:38.170 HYPERVISOR: exec_cmd: vm get_status SW1 
+Jun 16 15:27:38.170 HYPERVISOR: exec_cmd: vm slot_add_binding SW1 1 0 NM-16ESW 
+Jun 16 15:27:38.294 HYPERVISOR: exec_cmd: nio create_udp udp-d2d4f030-8016-4321-a5ba-1c2d6d5b7bbb 10002 127.0.0.1 10003 
+Jun 16 15:27:38.501 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW1 1 0 udp-d2d4f030-8016-4321-a5ba-1c2d6d5b7bbb 
+Jun 16 15:27:38.503 HYPERVISOR: exec_cmd: vm get_status SW1 
+Jun 16 15:27:38.818 HYPERVISOR: exec_cmd: nio create_udp udp-317db340-f9ac-4c90-9209-a51e80032203 10008 127.0.0.1 10009 
+Jun 16 15:27:38.818 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW1 1 1 udp-317db340-f9ac-4c90-9209-a51e80032203 
+Jun 16 15:27:38.819 HYPERVISOR: exec_cmd: vm get_status SW1 
+Jun 16 15:27:38.860 HYPERVISOR: exec_cmd: nio create_udp udp-b95ea6d6-c5a5-444a-b141-ba9dabe907ee 10012 127.0.0.1 10013 
+Jun 16 15:27:38.860 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW1 1 2 udp-b95ea6d6-c5a5-444a-b141-ba9dabe907ee 
+Jun 16 15:27:38.860 HYPERVISOR: exec_cmd: vm get_status SW1 
+Jun 16 15:27:53.345 HYPERVISOR: exec_cmd: nio create_udp udp-c4aab5d8-f96c-4a2d-b390-e6d89e24a92e 10024 127.0.0.1 10025 
+Jun 16 15:27:53.346 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW1 1 3 udp-c4aab5d8-f96c-4a2d-b390-e6d89e24a92e 
+Jun 16 15:27:53.346 HYPERVISOR: exec_cmd: vm get_status SW1 
+Jun 16 15:30:58.862 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jun 16 15:30:58.862 VM: VM Ghost created.
+Jun 16 15:30:58.868 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 16 15:30:58.869 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 16 15:30:58.869 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/oem/GNS3/projects/trnk/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 16 15:30:58.869 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jun 16 15:30:58.872 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 16 15:30:58.872 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jun 16 15:30:58.873 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 16 15:30:59.183 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 16 15:30:59.183 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 16 15:30:59.287 VM: VM Ghost shutdown.
+Jun 16 15:30:59.287 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jun 16 15:30:59.288 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 16 15:30:59.288 VM: VM Ghost destroyed.
+Jun 16 15:30:59.288 HYPERVISOR: exec_cmd: vm set_ghost_status SW1 2 
+Jun 16 15:30:59.288 HYPERVISOR: exec_cmd: vm set_ghost_file SW1 /home/oem/GNS3/projects/trnk/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 16 15:30:59.288 HYPERVISOR: exec_cmd: vm get_status SW1 
+Jun 16 15:30:59.289 HYPERVISOR: exec_cmd: vm set_config SW1 configs/i1_startup-config.cfg 
+Jun 16 15:30:59.289 HYPERVISOR: exec_cmd: vm start SW1 
+Jun 16 15:42:59.587 HYPERVISOR: exec_cmd: vm extract_config SW1 
+Jun 16 15:42:59.592 HYPERVISOR: exec_cmd: vm extract_config SW1 
+Jun 16 15:52:35.691 HYPERVISOR: exec_cmd: vm get_status SW1 
+Jun 16 15:52:35.693 HYPERVISOR: exec_cmd: vm stop SW1 
+Jun 16 15:52:35.839 VM: VM SW1 shutdown.
+Jun 16 15:52:35.839 HYPERVISOR: exec_cmd: vm extract_config SW1 

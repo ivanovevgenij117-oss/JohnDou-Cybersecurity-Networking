@@ -1,0 +1,26 @@
+Jun 05 13:54:00.965 HYPERVISOR: Release 0.2.14-amd64/Linux (tag 2014092320)
+Jun 05 13:54:00.965 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39565.
+Jun 05 13:54:00.973 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 05 13:54:00.974 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/ex03/project-files/dynamips 
+Jun 05 13:54:00.974 GENERAL: working_dir=/home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/ex03/project-files/dynamips
+Jun 05 13:54:00.974 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/ex03/project-files/dynamips/89e068bc-bf92-4942-b1e2-5d887a730f57 
+Jun 05 13:54:00.974 GENERAL: working_dir=/home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/ex03/project-files/dynamips/89e068bc-bf92-4942-b1e2-5d887a730f57
+Jun 05 13:54:00.974 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Jun 05 13:54:00.974 VM: VM R2 created.
+Jun 05 13:54:00.974 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5002 
+Jun 05 13:54:00.974 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Jun 05 13:54:00.975 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jun 05 13:54:00.975 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 05 13:54:00.975 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60b29158 
+Jun 05 13:54:00.976 HYPERVISOR: exec_cmd: vm set_ios R2 /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 05 13:54:00.976 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c402.250e.0000 
+Jun 05 13:54:00.976 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jun 05 13:54:00.977 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Jun 05 13:54:01.268 HYPERVISOR: exec_cmd: nio create_udp udp-01694331-9507-4ce3-87c4-d82a0c5f343b 10004 127.0.0.1 10005 
+Jun 05 13:54:01.481 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-01694331-9507-4ce3-87c4-d82a0c5f343b 
+Jun 05 13:54:01.482 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 05 13:54:19.044 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 05 13:54:19.045 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/ex03/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 05 13:54:19.046 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 05 13:54:19.047 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Jun 05 13:54:19.047 HYPERVISOR: exec_cmd: vm start R2 

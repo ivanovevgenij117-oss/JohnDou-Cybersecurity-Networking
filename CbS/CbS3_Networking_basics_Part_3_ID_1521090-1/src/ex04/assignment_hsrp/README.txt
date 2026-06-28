@@ -1,0 +1,4 @@
+Project: 'assignment_hsrp' created on 2026-06-18
+Author: John Doe <john.doe@example.com>
+
+No project description was given

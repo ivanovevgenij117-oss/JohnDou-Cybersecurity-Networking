@@ -1,0 +1,31 @@
+services:
+  postgres21:
+    image: postgres:15-alpine  
+    container_name: postgres21
+    environment:
+      POSTGRES_PASSWORD: qwerty
+      POSTGRES_DB: mydatabase  
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./materials/rush01_model.sql:/docker-entrypoint-initdb.d/init.sql
+      - postgres_data:/var/lib/postgresql/data  
+    restart: always
+      
+  pgadmin21:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin21
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: qwerty
+    ports:
+      - "8082:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin  
+    restart: always
+    depends_on:
+      - postgres21 
+
+volumes:
+  postgres_data:
+  pgadmin_data:

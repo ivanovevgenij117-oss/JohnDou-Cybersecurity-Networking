@@ -1,0 +1,35 @@
+Jun 17 23:51:08.810 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 17 23:51:08.810 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 32981.
+Jun 17 23:51:08.818 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 23:51:08.819 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/GNS3/projects/ospf/project-files/dynamips 
+Jun 17 23:51:08.819 GENERAL: working_dir=/home/oem/GNS3/projects/ospf/project-files/dynamips
+Jun 17 23:51:08.819 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/GNS3/projects/ospf/project-files/dynamips/d0d3c72b-cc77-4529-9792-35e2326c0626 
+Jun 17 23:51:08.819 GENERAL: working_dir=/home/oem/GNS3/projects/ospf/project-files/dynamips/d0d3c72b-cc77-4529-9792-35e2326c0626
+Jun 17 23:51:08.819 HYPERVISOR: exec_cmd: vm create R4 4 c3745 
+Jun 17 23:51:08.820 VM: VM R4 created.
+Jun 17 23:51:08.820 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Jun 17 23:51:08.820 HYPERVISOR: exec_cmd: c3745 get_mac_addr R4 
+Jun 17 23:51:08.820 HYPERVISOR: exec_cmd: vm set_ios R4 /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 17 23:51:08.821 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 17 23:51:08.821 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60b29158 
+Jun 17 23:51:08.821 HYPERVISOR: exec_cmd: vm set_ram R4 256 
+Jun 17 23:51:08.822 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Jun 17 23:51:08.822 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Jun 17 23:51:08.892 HYPERVISOR: exec_cmd: vm set_ios R4 /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 17 23:51:37.401 HYPERVISOR: exec_cmd: nio create_udp udp-a5699345-df1f-4d86-b0cf-64eadbc54599 10010 127.0.0.1 10011 
+Jun 17 23:51:37.610 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-a5699345-df1f-4d86-b0cf-64eadbc54599 
+Jun 17 23:51:37.610 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 17 23:51:42.018 HYPERVISOR: exec_cmd: nio create_udp udp-3fba1178-4da1-461e-b85d-fa8d034ca3bc 10014 127.0.0.1 10015 
+Jun 17 23:51:42.020 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-3fba1178-4da1-461e-b85d-fa8d034ca3bc 
+Jun 17 23:51:42.020 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 17 23:51:47.321 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Jun 17 23:51:47.322 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/oem/GNS3/projects/ospf/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 17 23:51:47.322 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 17 23:51:47.323 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Jun 17 23:51:47.323 HYPERVISOR: exec_cmd: vm start R4 
+Jun 17 23:57:17.595 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 17 23:57:17.602 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 18 00:00:46.020 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 18 00:00:46.020 HYPERVISOR: exec_cmd: vm stop R4 
+Jun 18 00:00:46.135 VM: VM R4 shutdown.
+Jun 18 00:00:46.136 HYPERVISOR: exec_cmd: vm extract_config R4 

@@ -1,0 +1,3 @@
+﻿Протокол 4 уровня UDP
+source & destination ports is 123
+Transmit Timestamp: Jan  1, 2015 00:01:23.999994210 UTC

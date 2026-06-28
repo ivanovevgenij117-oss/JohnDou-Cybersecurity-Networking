@@ -1,0 +1,6 @@
+Cisco Router Simulation Platform (version 0.2.14-amd64/Linux stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Apr  3 2018 12:20:29
+
+Local UUID: 675cabd9-8fbd-4741-ba22-6240a2368853
+

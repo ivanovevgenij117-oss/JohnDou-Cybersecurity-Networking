@@ -1,0 +1,3 @@
+﻿Chain INPUT (policy ACCEPT 85 packets, 4976 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1       35  1540 DROP       tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80

@@ -1,0 +1,32 @@
+Jun 17 23:51:05.145 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 17 23:51:05.145 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55813.
+Jun 17 23:51:05.154 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 23:51:05.155 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/GNS3/projects/ospf/project-files/dynamips 
+Jun 17 23:51:05.155 GENERAL: working_dir=/home/oem/GNS3/projects/ospf/project-files/dynamips
+Jun 17 23:51:05.156 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/GNS3/projects/ospf/project-files/dynamips/9a4c9fdc-6a59-4046-928f-fd3d951f7292 
+Jun 17 23:51:05.156 GENERAL: working_dir=/home/oem/GNS3/projects/ospf/project-files/dynamips/9a4c9fdc-6a59-4046-928f-fd3d951f7292
+Jun 17 23:51:05.156 HYPERVISOR: exec_cmd: vm create R3 3 c3745 
+Jun 17 23:51:05.156 VM: VM R3 created.
+Jun 17 23:51:05.157 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Jun 17 23:51:05.157 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+Jun 17 23:51:05.158 HYPERVISOR: exec_cmd: vm set_ios R3 /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 17 23:51:05.159 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 17 23:51:05.159 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60b29158 
+Jun 17 23:51:05.160 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+Jun 17 23:51:05.161 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Jun 17 23:51:05.161 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Jun 17 23:51:05.246 HYPERVISOR: exec_cmd: vm set_ios R3 /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 17 23:51:42.028 HYPERVISOR: exec_cmd: nio create_udp udp-c29eb3f5-2b4f-4cc1-926d-8f0426903525 10016 127.0.0.1 10017 
+Jun 17 23:51:42.236 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-c29eb3f5-2b4f-4cc1-926d-8f0426903525 
+Jun 17 23:51:42.237 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 17 23:51:47.085 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Jun 17 23:51:47.086 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/oem/GNS3/projects/ospf/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 17 23:51:47.086 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 17 23:51:47.086 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Jun 17 23:51:47.086 HYPERVISOR: exec_cmd: vm start R3 
+Jun 17 23:59:17.346 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jun 17 23:59:17.352 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jun 18 00:00:45.942 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 18 00:00:45.942 HYPERVISOR: exec_cmd: vm stop R3 
+Jun 18 00:00:46.017 VM: VM R3 shutdown.
+Jun 18 00:00:46.018 HYPERVISOR: exec_cmd: vm extract_config R3 

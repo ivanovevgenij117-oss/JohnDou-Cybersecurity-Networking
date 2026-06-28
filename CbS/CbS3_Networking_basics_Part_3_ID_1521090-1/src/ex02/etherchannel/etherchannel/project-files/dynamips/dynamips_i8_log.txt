@@ -1,0 +1,53 @@
+Jun 16 18:24:25.578 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 16 18:24:25.578 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 36061.
+Jun 16 18:24:25.588 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 18:24:25.588 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/virtual3/project-files/dynamips 
+Jun 16 18:24:25.588 GENERAL: working_dir=/home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/virtual3/project-files/dynamips
+Jun 16 18:24:25.588 HYPERVISOR: exec_cmd: hypervisor working_dir /home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/virtual3/project-files/dynamips/2e5b01d2-96b4-498c-bb65-edc17e5f4dbf 
+Jun 16 18:24:25.588 GENERAL: working_dir=/home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/virtual3/project-files/dynamips/2e5b01d2-96b4-498c-bb65-edc17e5f4dbf
+Jun 16 18:24:25.588 HYPERVISOR: exec_cmd: vm create SW2 2 c3745 
+Jun 16 18:24:25.588 VM: VM SW2 created.
+Jun 16 18:24:25.588 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW2 5011 
+Jun 16 18:24:25.588 HYPERVISOR: exec_cmd: c3745 get_mac_addr SW2 
+Jun 16 18:24:25.589 HYPERVISOR: exec_cmd: vm set_disk0 SW2 1 
+Jun 16 18:24:25.589 HYPERVISOR: exec_cmd: vm get_status SW2 
+Jun 16 18:24:25.589 HYPERVISOR: exec_cmd: vm set_idle_pc SW2 0x60b29158 
+Jun 16 18:24:25.589 HYPERVISOR: exec_cmd: vm set_ios SW2 /home/oem/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 16 18:24:25.589 HYPERVISOR: exec_cmd: c3745 set_mac_addr SW2 c402.36ef.0000 
+Jun 16 18:24:25.589 HYPERVISOR: exec_cmd: vm set_nvram SW2 256 
+Jun 16 18:24:25.590 HYPERVISOR: exec_cmd: vm set_ram SW2 256 
+Jun 16 18:24:25.590 HYPERVISOR: exec_cmd: vm get_status SW2 
+Jun 16 18:24:25.590 HYPERVISOR: exec_cmd: vm slot_add_binding SW2 1 0 NM-16ESW 
+Jun 16 18:24:25.590 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW2 5011 
+Jun 16 18:24:25.867 HYPERVISOR: exec_cmd: nio create_udp udp-8e533957-38a7-4c61-985a-9f73df7bb488 10040 127.0.0.1 10041 
+Jun 16 18:24:26.073 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW2 1 0 udp-8e533957-38a7-4c61-985a-9f73df7bb488 
+Jun 16 18:24:26.073 HYPERVISOR: exec_cmd: vm get_status SW2 
+Jun 16 18:24:26.265 HYPERVISOR: exec_cmd: nio create_udp udp-0507df2e-5046-4ed3-94a4-128f935b3623 10052 127.0.0.1 10053 
+Jun 16 18:24:26.266 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW2 1 1 udp-0507df2e-5046-4ed3-94a4-128f935b3623 
+Jun 16 18:24:26.266 HYPERVISOR: exec_cmd: vm get_status SW2 
+Jun 16 18:24:26.343 HYPERVISOR: exec_cmd: nio create_udp udp-c209f8a8-7e62-41c5-9e99-8965d9cc02ef 10056 127.0.0.1 10057 
+Jun 16 18:24:26.344 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW2 1 2 udp-c209f8a8-7e62-41c5-9e99-8965d9cc02ef 
+Jun 16 18:24:26.344 HYPERVISOR: exec_cmd: vm get_status SW2 
+Jun 16 18:24:31.543 HYPERVISOR: exec_cmd: vm set_ghost_status SW2 2 
+Jun 16 18:24:31.544 HYPERVISOR: exec_cmd: vm set_ghost_file SW2 /home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/virtual3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 16 18:24:31.544 HYPERVISOR: exec_cmd: vm get_status SW2 
+Jun 16 18:24:31.544 HYPERVISOR: exec_cmd: vm set_config SW2 configs/i2_startup-config.cfg 
+Jun 16 18:24:31.544 HYPERVISOR: exec_cmd: vm start SW2 
+Jun 16 18:25:05.736 HYPERVISOR: exec_cmd: vm get_status SW2 
+Jun 16 18:25:05.737 HYPERVISOR: exec_cmd: vm stop SW2 
+Jun 16 18:25:05.810 VM: VM SW2 shutdown.
+Jun 16 18:25:05.811 HYPERVISOR: exec_cmd: vm extract_config SW2 
+Jun 16 18:25:25.002 HYPERVISOR: exec_cmd: nio create_udp udp-c198e0c0-6b08-4b18-8c51-08c301260929 10008 127.0.0.1 10009 
+Jun 16 18:25:25.003 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW2 1 3 udp-c198e0c0-6b08-4b18-8c51-08c301260929 
+Jun 16 18:25:25.003 HYPERVISOR: exec_cmd: vm get_status SW2 
+Jun 16 18:25:40.089 HYPERVISOR: exec_cmd: vm set_ghost_status SW2 2 
+Jun 16 18:25:40.090 HYPERVISOR: exec_cmd: vm set_ghost_file SW2 /home/oem/Документы/CbS/CbS1_Networking_basics_Part_1-1/src/virtual3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 16 18:25:40.092 HYPERVISOR: exec_cmd: vm get_status SW2 
+Jun 16 18:25:40.092 HYPERVISOR: exec_cmd: vm set_config SW2 configs/i2_startup-config.cfg 
+Jun 16 18:25:40.092 HYPERVISOR: exec_cmd: vm start SW2 
+Jun 16 18:36:40.368 HYPERVISOR: exec_cmd: vm extract_config SW2 
+Jun 16 18:36:40.374 HYPERVISOR: exec_cmd: vm extract_config SW2 
+Jun 16 18:37:21.350 HYPERVISOR: exec_cmd: vm get_status SW2 
+Jun 16 18:37:21.351 HYPERVISOR: exec_cmd: vm stop SW2 
+Jun 16 18:37:21.480 VM: VM SW2 shutdown.
+Jun 16 18:37:21.480 HYPERVISOR: exec_cmd: vm extract_config SW2 

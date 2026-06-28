@@ -1,0 +1,45 @@
+# --- Основные настройки сервера ---
+smtpd_banner = $myhostname ESMTP $mail_name
+biff = no
+append_dot_mydomain = no
+readme_directory = no
+compatibility_level = 2
+
+# --- Имена и сетевые привязки ---
+myhostname = localhost
+alias_maps = hash:/etc/aliases
+alias_database = hash:/etc/aliases
+myorigin = /etc/mailname
+mydestination = localhost, localhost.localdomain
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
+
+# Цифра 0 здесь отключает лимит на размер почтового ящика в системе, чтобы Postfix не падал, если логи системы весят очень много
+mailbox_size_limit = 0
+recipient_delimiter = +
+
+# приказывает почтовому серверу слушать только внутренний локальный интерфейс 127.0.0.1 (Loopback).
+# Никто из внешнего интернета или вашей домашней сети не сможет подключиться к вашему Postfix. 
+#cОн работает только на отправку писем изнутри самой виртуалки.
+inet_interfaces = loopback-only
+
+inet_protocols = ipv4
+
+# --- Настройка пересылки (SMTP Relay) через Yandex ---
+relayhost = [smtp.mail.ru]:465
+
+# --- Настройки безопасности и TLS (Шифрование) ---
+smtp_tls_security_level = encrypt
+smtp_tls_wrappermode = yes
+smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
+
+# --- Настройка авторизации (Логин и Пароль) ---
+#  включил механизм SASL-авторизации, чтобы Postfix мог легально передавать Яндексу мой логин и пароль приложения. 
+# Сами пароли лежат в зашифрованной базе данных sasl_passwd
+# noanonymous запрещает отправку писем без авторизации (анонимно), что защищает сервер от превращения в спам-бот
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+smtp_sasl_tls_security_options = noanonymous
+
+smtp_generic_maps = hash:/etc/postfix/generic
+
