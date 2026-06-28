@@ -1,0 +1,13 @@
+
+
+This	is	a	text	with	tabs.
+Here	are	some	more	tabs	in	this	line.
+
+
+
+And	yet	another	line	with	tabulations.
+
+Hello!␍
+How are you?␍
+I'm fine.␍
+Here's some text with a tabulation ->	<- and a line break.⏎

@@ -1,0 +1,9 @@
+services:
+        cgi:
+                build: . #собираемый Dockerfile находится в текущей директории
+        nginx:
+                image: nginx:latest
+                ports:
+                        - "80:8080"
+                volumes:
+                        - ./Cnginx.conf:/etc/nginx/conf.d/default.conf

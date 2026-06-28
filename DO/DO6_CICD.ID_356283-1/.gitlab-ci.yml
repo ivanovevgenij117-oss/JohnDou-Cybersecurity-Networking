@@ -1,0 +1,69 @@
+stages:
+        - build
+        - style
+        - test
+        - deploy
+        - notify
+
+build:
+        stage: build
+        script:
+                - cd src/SimpleBash/cat
+                - make s21_cat || exit 1 # при неупехе фейлим пайплайн
+                - cd ../grep
+                - make s21_grep || exit 1
+        artifacts:
+                paths:
+                        - src/SimpleBash/cat/s21_cat # имена сохраняемых файлов 'артефактов'-результата сборки
+                        - src/SimpleBash/grep/s21_grep
+                expire_in: 30 days #срок хранения артефактов
+
+style:
+        stage: style
+        script:
+                - clang-format -n -Werror --style=Google src/SimpleBash/cat/s21_cat.c src/SimpleBash/cat/s21_cat.h src/SimpleBash/grep/s21_grep.c src/SimpleBash/grep/s21_grep.h || exit 1 # -Werror - для прерывания пайплайна при любой ошибке
+        allow_failure: false # фейлим при непрохождении
+
+test:
+        stage: test
+        script:
+                - cd src/SimpleBash/cat
+                - make test || exit 1
+                - cd ../grep
+                - make test || exit 1
+        allow_failure: false
+
+notify_build:
+        stage: notify
+        when: on_success
+        needs: ["build"]
+        script:
+                - sh src/notification.sh "build - OK"
+
+notify_style:
+        stage: notify
+        when: on_success
+        needs: ["style"]
+        script:
+                - sh src/notification.sh "style - OK"
+
+notify_test:
+        stage: notify
+        when: on_success
+        needs: ["test"]
+        script:
+                - sh src/notification.sh "test - OK"
+
+deploy:
+        stage: deploy
+        script:
+                - bash src/cp.sh
+        when: manual # запуск вручную
+        #        needs: [] # не зависит от предыдущих этапов
+
+notify_deploy:
+        stage: notify
+        when: on_success
+        needs: ["deploy"]
+        script:
+                - sh src/notification.sh "deploy - OK"

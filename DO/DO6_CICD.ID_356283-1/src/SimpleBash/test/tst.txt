@@ -1,0 +1,20 @@
+
+
+
+
+Message     from developers:
+Hello, dear friend! 
+    Let's play a game.
+    Something like the good old text-based adventure games with elements of a puzzle.
+Each Task is a challenge, usually some kind of a hurdle you need to overcome. 
+Only those who tackle them all will be able to move further. 
+
+Below are several tips to help you find your way: 
+    1. During the entire journey, you will be accompanied by the feeling of uncertainty and a severe shortage of information: THAT'S OK. It's a part of the game. Remember that the information in the repository and Google are always there for you. Just like other players. Communicate. Search. Collect. Do not be afraid to make a mistake.
+02. There may be a game inside the game, and another game inside it. That's normal. Just like in real life. Recursion is beautiful.
+
+
+
+3. Levels can be very different from one another. That's normal. It's a part of the game. You can't just learn one recipe and apply it everywhere. The only way to achieve the goal is by continuously learning and adapting. 
+    4. It's a multiplayer game, even if it doesn't seem like it in the beginning.
+5. You will, however, be able to get through most of it on your own.
